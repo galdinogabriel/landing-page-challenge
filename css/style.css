@@ -113,6 +113,7 @@ body {
     top: -200px;
     z-index: -1;
     right: 0px;
+    width: 45%;
 }
 
 .caracteristicas{
@@ -192,7 +193,7 @@ body {
 }
 
 .chamada{
-    margin-top: 15vh;
+    margin-top: 20vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -273,4 +274,12 @@ a{
     display: flex;
     gap: 20px;
     
+}
+
+.ilustration-background-2{
+    position: absolute;
+    left: -400px;
+    top: 130vh;
+    z-index: -1;
+    width: 45%;
 }
