@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/mediaquery.css">
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
         <link rel="stylesheet"
@@ -17,7 +18,9 @@
     <body>
         <header class="cabecalho">
 
+
             <img src="imagens/logo.svg" alt="" class="cabecalho__logo">
+
 
             <nav class="cabecalho__nav">
                 <a class="nav__item">Preço</a>
@@ -28,6 +31,10 @@
             </nav>
 
             <button class="botao">Get Started</button>
+
+            <div class="menu-burger">
+                <img src="imagens/icon-hamburger.svg" alt="">
+            </div>
 
         </header>
 
@@ -187,34 +194,49 @@
                 </div>
                 <div class="rodape__container">
                     <div class="rodape__redes-sociais-container">
-                        <img src="imagens/logo.svg" alt="">
+                        <img src="imagens/logo2.svg" alt="" class="rodape-logo">
                         <div class="rodape__redes-sociais-icons">
-                            <img src="imagens/midiasociais/icon-facebook.svg"
-                                alt="">
-                            <img src="imagens/midiasociais/icon-youtube.svg"
-                                alt="">
-                            <img src="imagens/midiasociais/icon-twitter.svg"
-                                alt="">
-                            <img src="imagens/midiasociais/icon-pinterest.svg"
-                                alt="">
-                            <img src="imagens/midiasociais/icon-instagram.svg"
-                                alt="">
+                            <a class="nav__item">
+                                <img
+                                    src="imagens/midiasociais/icon-facebook.svg"
+                                    alt="">
+                            </a>
+                            <a class="nav__item"><img
+                                    src="imagens/midiasociais/icon-youtube.svg"
+                                    alt="">
+                            </a>
+                            <a class="nav__item">
+                                <img src="imagens/midiasociais/icon-twitter.svg"
+                                    alt="">
+                            </a>
+
+                            <a class="nav__item">
+                                <img
+                                    src="imagens/midiasociais/icon-pinterest.svg"
+                                    alt="">
+                            </a>
+                            <a class="nav__item">
+                                <img
+                                    src="imagens/midiasociais/icon-instagram.svg"
+                                    alt="">
+                            </a>
+
                         </div>
                     </div>
 
                     <div class="rodape__navegacao">
                         <nav class="rodape__nav">
-                            <a href="">Home</a>
-                            <a href="">Pricing</a>
-                            <a href="">products</a>
-                            <a href="">About us</a>
+                            <a class="nav__item nav__item--white">Home</a>
+                            <a class="nav__item nav__item--white">Pricing</a>
+                            <a class="nav__item nav__item--white"> products</a>
+                            <a class="nav__item nav__item--white">About us</a>
                         </nav>
 
 
                         <nav class="rodape__nav-outros">
-                            <a href="">Carrers</a>
-                            <a href="">Community</a>
-                            <a href="">Privacy Policy</a>
+                            <a class="nav__item nav__item--white">Carrers</a>
+                            <a class="nav__item nav__item--white">Community</a>
+                            <a class="nav__item nav__item--white">Privacy Policy</a>
                         </nav>
                     </div>
 
@@ -222,7 +244,7 @@
                     <div class="rodape__pesquisar-criador">
                         <div class="rodape__pesquisar">
                             <input type="text" class="rodape__input"
-                                placeholder="Updates in your inbox...">
+                                placeholder="Updates in inbox...">
                             <button class="botao">Go</button>
                         </div>
 
@@ -241,6 +263,7 @@
             class="ilustration-background">
         <img src="imagens/bg-tablet-pattern.svg" alt=""
             class="ilustration-background-2">
+        <div class="fade"></div>
 
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -251,5 +274,6 @@
         <script src="js/scroll-reveal.js"></script>
 
     </body>
+
 
 </html>

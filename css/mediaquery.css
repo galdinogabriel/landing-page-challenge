@@ -1,0 +1,190 @@
+/* Regras para tablets grandes e dispositivos móveis em paisagem (entre 992px e 1199px) */
+@media screen and (max-width: 1199px) {
+
+    .rodape__input {
+        width: 150px;
+    }
+
+    .cabecalho .botao {
+        display: none;
+    }
+
+    .cabecalho__nav {
+        opacity: 0;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 80px;
+        padding: 10%;
+        width: 80vw;
+        background: white;
+        flex-direction: column;
+        z-index: 3;
+        box-shadow:
+            2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+            6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+            12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+            22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+            41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+            100px 100px 80px rgba(0, 0, 0, 0.07);
+        border-radius: 10px;
+        transition: opacity 0.5s ease;
+    }
+
+
+    .fade {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        top: 0;
+        position: fixed;
+        z-index: 2;
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.8069718567251463) 0%, rgba(0, 0, 0, 0.6900127923976609) 50%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    .ativo {
+        opacity: 1;
+    }
+
+    .nav__item {
+        text-align: center;
+    }
+
+    .menu-burger {
+        display: block;
+        z-index: 3;
+    }
+
+    .rodape-logo {
+        width: 40%;
+    }
+
+    .rodape__container {
+        padding-left: 100px;
+        padding-right: 100px;
+
+    }
+}
+
+/* Regras para tablets e dispositivos móveis em retrato (entre 768px e 991px) */
+@media screen and (max-width: 991px) {
+
+    .apresentacao__ilustracao {
+        width: 60%;
+    }
+
+    .rodape__container {
+        grid-template-areas:
+            "update"
+            "nav"
+            "redesociais";
+        padding-left: 0px;
+        padding-right: 0px;
+        grid-gap: 40px;
+    }
+
+    .rodape__redes-sociais-container {
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .rodape__pesquisar-criador {
+        align-items: center;
+        gap: 30px;
+    }
+
+    .rodape-logo {
+        width: 15%;
+    }
+}
+
+/* Regras para dispositivos móveis em paisagem pequenos (entre 480px e 767px) */
+@media screen and (max-width: 767px) {
+
+    .cabecalho__logo {
+        width: 20%;
+    }
+
+    .apresentacao__ilustracao {
+        width: 80%;
+    }
+
+    .caracteristicas__item__numero {
+        left: -75px;
+    }
+
+    .apresentacao {
+     
+        flex-direction: column-reverse;
+        height: unset;
+        width: 90vw;
+        gap: 30px;
+    }
+
+    .conteudo__textos {
+        width: 70vw;
+        align-items: center;
+    }
+
+
+
+    .caracteristicas {
+        margin-top: 15vh;
+        flex-direction: column;
+        gap: 50px;
+
+    }
+
+    .caracteristicas__diferenciais {
+        gap: 45px;
+
+    }
+
+    .caracteristicas__item {
+        padding-left: 12vw;
+        width: unset;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+
+    .chamada {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px
+    }
+}
+
+/* Regras para dispositivos móveis em retrato pequenos (menos que 479px) */
+@media screen and (max-width: 479px) {
+    
+    .apresentacao__ilustracao {
+        width: 80%;
+    }
+
+    .rodape__input {
+        width: 150px;
+        padding: 5%;
+
+    }
+
+    .botao {
+        width: 120px;
+    }
+
+    .cabecalho__logo {
+        width: 40%;
+    }
+
+    .rodape-logo {
+        width: 30%;
+    }
+
+    .chamada>h1 {
+        text-align: center;
+    }
+}

@@ -14,10 +14,14 @@ body {
 
 }
 
+.menu-burger {
+    display: none;
+}
+
 .cabecalho {
     margin: auto;
     width: 70vw;
-    height:15vh;
+    height: 15vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,10 +36,23 @@ body {
 
 .nav__item {
     color: hsl(228, 39%, 23%);
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.nav__item:hover {
+    color: #f3603c;
+    transform: scale(1.1);
+}
+
+.nav__item--white {
+    color: white;
 }
 
 .botao {
     font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: clamp(11px, 100%, 16px);
     border: none;
     color: white;
     background: #f3603c;
@@ -43,7 +60,7 @@ body {
     -webkit-border-radius: 144px 138px 137px 136px;
     -moz-border-radius: 144px 138px 137px 136px;
     height: 50px;
-    width: 150px;
+    width: 130px;
     box-shadow:
         2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
         6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
@@ -51,14 +68,20 @@ body {
         22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
         41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
         100px 100px 80px rgba(0, 0, 0, 0.07);
+    transition: 0.3s;
+    cursor: pointer;
 }
 
-.botao--center{
+.botao:hover {
+    transform: scale(1.1);
+}
+
+.botao--center {
     display: block;
     margin: auto;
 }
 
-.botao--white{
+.botao--white {
     background: white;
     color: #f3603c;
 }
@@ -71,7 +94,8 @@ body {
     align-items: center;
     height: 85vh;
 }
-.apresentacao__ilustracao{
+
+.apresentacao__ilustracao {
     width: 50%;
 }
 
@@ -86,29 +110,30 @@ body {
 
 .conteudo__titulo {
     color: hsl(228, 39%, 23%);
-    font-size: 42px;
+    font-size: clamp(33px, 2.2vw, 42px);
 }
 
-.conteudo__titulo--center{
+.conteudo__titulo--center {
     text-align: center;
 }
 
 .conteudo__titulo--pequeno {
     font-weight: 800;
-    font-size: 16px;
+    font-size: clamp(16px, 2.2vw, 22px);
 }
 
-.conteudo__titulo--medio{
-    font-size: 32px;
+.conteudo__titulo--medio {
+    font-size: clamp(25px, 2.2vw, 32px);
     color: white;
 }
 
-.conteudo__paragrafo{
+.conteudo__paragrafo {
     color: hsl(227, 12%, 61%);
     text-align: justify;
+    font-size: clamp(12px, 100%, 20px);
 }
 
-.ilustration-background{
+.ilustration-background {
     position: absolute;
     top: -200px;
     z-index: -1;
@@ -116,7 +141,7 @@ body {
     width: 45%;
 }
 
-.caracteristicas{
+.caracteristicas {
     margin: auto;
     width: 70vw;
     margin-top: 2vh;
@@ -125,138 +150,149 @@ body {
     justify-content: space-between;
 }
 
-.caracteristicas__diferenciais{
+.caracteristicas__diferenciais {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 45px;
 }
 
-.caracteristicas__item__numero{
+.caracteristicas__item__numero {
     position: absolute;
     left: -90px;
     text-align: center;
-    background:#f3603c;
+    background: #f3603c;
     color: white;
     padding: 10px;
     width: 60px;
     border-radius: 144px 138px 137px 136px;
     -webkit-border-radius: 144px 138px 137px 136px;
     -moz-border-radius: 144px 138px 137px 136px;
-    
+
 }
 
-.item__title-container{
+.item__title-container {
     display: flex;
     align-items: center;
     gap: 20px;
     position: relative;
-    
+
 }
 
-.caracteristicas__title{
+.caracteristicas__title {
     position: relative;
 }
 
-.caracteristicas__item{
+.caracteristicas__item {
     width: 30vw;
     display: flex;
     flex-direction: column;
     gap: 20px;
+
 }
 
-.comentarios{
+.comentarios {
     display: flex;
     flex-direction: column;
-    gap:7vh;
+    gap: 7vh;
     margin-top: 15vh;
 }
 
-.card__item{
+.card__item {
     padding: 20px;
     text-align: center;
     background: hsl(0, 0%, 98%);
 }
 
-.card__item__img{
+.card__item__img {
     padding: 30px;
     margin: auto;
 }
 
-
-.comentarios__card__container{
-   
-}
-
-.conteudo__paragrafo--card{
+.conteudo__paragrafo--card {
     padding: 3%;
 }
 
-.chamada{
+.chamada {
     margin-top: 20vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     background: #f3603c;
-    height: 20vh;
-}
-
-.rodape{
-    background: hsl(228, 39%, 23%);
-}
-
-.rodape__container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     height: 30vh;
 }
 
-.rodape__redes-sociais-container{
+.rodape {
+    background: hsl(228, 39%, 23%);
+}
+
+.rodape__container {
+    display: grid;
+    padding: 50px 180px 50px 180px;
+    grid-template-areas:
+        "redesociais nav update";
+
+}
+
+.rodape-logo {
+    width: 20%;
+}
+
+.rodape__redes-sociais-container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    grid-area: redesociais;
 }
 
-.rodape__nav{
- 
+.rodape__nav {
+
     display: flex;
     flex-direction: column;
+    justify-content: start;
+    align-items: start;
     gap: 20px;
-    
+
 
 }
-.rodape__nav-outros{
+
+.rodape__nav-outros {
     display: flex;
     flex-direction: column;
+    justify-content: start;
+    align-items: start;
     gap: 20px;
 }
 
-a{
+a {
     color: white;
     text-decoration: none;
 }
 
-.rodape__navegacao{
+.rodape__navegacao {
     margin: auto 0;
     display: flex;
-    gap: 10vw;
+    justify-content: center;
+    gap: 5vw;
+    grid-area: nav;
 }
 
-.rodape__redes-sociais-icons{
+.rodape__redes-sociais-icons {
     display: flex;
     gap: 20px;
 }
 
-.rodape__pesquisar-criador{
+.rodape__pesquisar-criador {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: end;
+    grid-area: update;
 }
 
-.rodape__input{
+.rodape__input {
+    width: 200px;
     border: none;
     background: white;
     padding: 5%;
@@ -265,18 +301,17 @@ a{
     -moz-border-radius: 144px 138px 137px 136px;
 }
 
-.rodape__input::placeholder{
-    padding: 5%;
+.rodape__input::placeholder {
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 
-.rodape__pesquisar{
+.rodape__pesquisar {
     display: flex;
     gap: 20px;
-    
+
 }
 
-.ilustration-background-2{
+.ilustration-background-2 {
     position: absolute;
     left: -400px;
     top: 130vh;

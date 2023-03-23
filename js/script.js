@@ -1,6 +1,6 @@
 $(".comentarios__card__container").slick({
   autoplay: true,
-  arrows:false,
+  arrows: false,
   autoplaySpeed: 2000,
   accessibility: false,
   dots: true,
@@ -31,8 +31,15 @@ $(".comentarios__card__container").slick({
         slidesToScroll: 1,
       },
     },
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ],
+});
+
+let menuBurger = document.querySelector(".menu-burger");
+let nav = document.querySelector(".cabecalho__nav");
+let body = document.querySelector(".fade");
+
+menuBurger.addEventListener("click", (e) => {
+  nav.classList.toggle("ativo");
+
+  body.classList.toggle("ativo");
 });
