@@ -1,0 +1,92 @@
+/*footer*/
+
+.rodape {
+    background: hsl(228, 39%, 23%);
+}
+
+.chamada {
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--cor-de-destaque);
+    padding: 5% 0 5% 0;
+}
+
+.rodape__container {
+    display: grid;
+    padding: 50px 120px 50px 120px;
+    grid-template-areas:
+        "redesociais nav update";
+
+}
+
+.rodape-logo {
+    width: 30%;
+}
+
+.rodape__redes-sociais-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    grid-area: redesociais;
+}
+
+.rodape__nav {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+}
+
+.rodape__nav-outros {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+}
+
+.rodape__navegacao {
+    margin: auto 0;
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    grid-area: nav;
+}
+
+.rodape__redes-sociais-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.rodape__pesquisar-criador {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+    grid-area: update;
+}
+
+.rodape__input {
+    width: 200px;
+    border: none;
+    background: white;
+    padding: 5%;
+    border-radius: 144px 138px 137px 136px;
+    -webkit-border-radius: 144px 138px 137px 136px;
+    -moz-border-radius: 144px 138px 137px 136px;
+}
+
+.rodape__input::placeholder {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.rodape__pesquisar {
+    display: flex;
+    gap: 20px;
+
+}

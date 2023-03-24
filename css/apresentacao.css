@@ -1,0 +1,23 @@
+/*apresentacao*/
+
+.apresentacao {
+    margin: auto;
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85vh;
+}
+
+.apresentacao__ilustracao {
+    width: 50%;
+}
+
+.conteudo__textos {
+    width: 19vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 30px;
+}

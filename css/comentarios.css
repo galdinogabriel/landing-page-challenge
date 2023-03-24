@@ -1,0 +1,27 @@
+/*comentarios*/
+
+.comentarios {
+    display: flex;
+    flex-direction: column;
+    gap: 7vh;
+    margin-top: 15vh;
+}
+
+.card__item {
+    padding: 20px;
+    text-align: center;
+    background: var(--cor-cinza-muito-claro);
+}
+
+.card__item__img {
+    padding: 30px;
+    margin: auto;
+}
+
+.conteudo__paragrafo--card {
+    max-width: 500px;
+    margin: auto;
+    text-align: start;
+    padding: 4%;
+    font-size: clamp(10px, 100%, 14px);
+}

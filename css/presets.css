@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+:root {
+    /*cores primarias*/
+    --cor-de-destaque: hsl(12, 88%, 59%);
+    --cor-secundaria: #hsl(228, 39%, 23%);
+    /*cores secundarias*/
+    --cor-cinza-escuro: hsl(227, 12%, 61%);
+    --cor-azul-escuro: hsl(233, 12%, 13%);
+    --cor-cinza-pastel: : hsl(13, 100%, 96%);
+    --cor-cinza-muito-claro: hsl(0, 0%, 98%);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.botao {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: clamp(11px, 100%, 16px);
+    border: none;
+    color: white;
+    background: var(--cor-de-destaque);
+    border-radius: 144px 138px 137px 136px;
+    -webkit-border-radius: 144px 138px 137px 136px;
+    -moz-border-radius: 144px 138px 137px 136px;
+    height: 50px;
+    width: 130px;
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.botao:hover {
+    transform: scale(1.1);
+}
+
+
+.botao--center {
+    display: block;
+    margin: auto;
+}
+
+.botao--white {
+    background: white;
+    color: var(--cor-de-destaque);
+}
+
+.conteudo__titulo {
+    color: var(--cor-secundaria);
+    font-size: clamp(33px, 2.2vw, 42px);
+}
+
+.conteudo__titulo--pequeno {
+    font-weight: 800;
+    font-size: clamp(16px, 2.2vw, 22px);
+}
+
+.conteudo__titulo--medio {
+    font-size: clamp(25px, 2.2vw, 32px);
+    color: white;
+}
+
+.conteudo__paragrafo {
+    color: var(--cor-cinza-escuro);
+    text-align: justify;
+    font-size: clamp(12px, 100%, 20px);
+}
+
+.conteudo__titulo--center {
+    text-align: center;
+}
+
+.ilustration-background-2 {
+    position: absolute;
+    left: -400px;
+    top: 130vh;
+    z-index: -1;
+    width: 45%;
+}
+
+.ilustration-background {
+    position: absolute;
+    top: -200px;
+    z-index: -1;
+    right: 0px;
+    width: 45%;
+}

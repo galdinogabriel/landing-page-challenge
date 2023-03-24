@@ -1,0 +1,38 @@
+/*css cabecalho*/
+
+.menu-burger {
+    display: none;
+    cursor: pointer;
+}
+
+.cabecalho {
+    margin: auto;
+    width: 70vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho__nav {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+
+}
+
+.nav__item {
+    color: hsl(228, 39%, 23%);
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.nav__item:hover {
+    color: var(--cor-de-destaque);
+    transform: scale(1.1);
+}
+
+.nav__item--white {
+    color: white;
+}
