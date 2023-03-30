@@ -1,6 +1,6 @@
 <h1>Projeto Landing Page Manage 🔗</h1>
 <p>Este é um projeto Landing Page criado sem bibliotecas ou frameworks com o objetivo de testar a aprimorar minhas habilidades, visto que Landing Pages estão muito presentes na web atualmente</p>
-<p>Acesse: <a href="https://galdinogabriel.github.io/landing-page-manage/">Projeto Landing Page Manage</a></p>
+<p>Acesse: <a href="https://galdinogabriel.github.io/landing-page-manage/" target=”_blank”>Projeto Landing Page Manage</a></p>
 
 <h2>Tecnologias usadas 🛠</h2>
 <ul>
